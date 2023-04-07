@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="new_article.php" method="post">
+        <p>
+            <label for="title">Tytuł artykułu</label>
+            <input type="text" id="title" name="title">
+        </p>
+        <p>
+            <label for="content">Treść artykułu</label>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </p>
+        <p><label for="publication-date">Data publikacji:</label></p>
+        <input type="datetime-local" id="publication-date">
+        <p>Typ publikacji</p>
+        <p>
+            <input type="radio" name="type" id="news" value="news">
+            <label for="news">News</label>
+            <input type="radio" name="type" id="review" value="review">
+            <label for="news">Rezencja</label>
+        </p>
+        <p>Tag</p>
+        <p>
+            <input type="checkbox" name="type" id="journey" value="journey">
+            <label for="journey">Podróż</label>
+            <input type="checkbox" name="type" id="lifestyle" value="lifestyle">
+            <label for="journey">Lifestyle</label>
+        </p>
+        <p>
+            <label for="category">Kategoria</label>
+            <select name="category" id="category">
+                <option value="category1">Kategoria 1</option>
+                <option value="category2">Kategoria 2</option>
+            </select>
+        </p>
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Wyślij</button>
+        </p>
+    </form>
+</body>
+</html>
